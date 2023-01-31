@@ -1,1 +1,328 @@
- main.js style.css
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kasper</title>
+  </head>
+  <body>
+    <section id="landing" class="landing">
+      <div class="container">
+        <header>
+          <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="Kasper Logo" /></a>
+          </div>
+          <i id="Menubtn" class="fa-solid fa-bars"></i>
+          <nav id="list">
+            <p><a href="#" class="active">HOME</a></p>
+            <p><a href="#">SERVICES</a></p>
+            <p><a href="#">PORTFOLIO</a></p>
+            <p><a href="#">ABOUT</a></p>
+            <p><a href="#">PRICING</a></p>
+            <p><a href="#">CONTACT</a></p>
+          </nav>
+        </header>
+      </div>
+      <div class="landing-text">
+        <h1>
+          HELLO WORLD!
+          <br />
+          WE ARE KASPER,WE MAKE ART.
+        </h1>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur
+          aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris
+          blandit aliquet elit, eget tincidunt.
+        </p>
+      </div>
+      <div class="dash">
+        <div id="firstImg"></div>
+        <div id="secImg" class="active"></div>
+        <div id="ThirdImg"></div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="title">
+          <h2>services</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div class="serv-grid">
+          <div class="serv-box">
+            <i class="fa-solid fa-tv"></i>
+            <div class="serv-text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="serv-box">
+            <i class="fa-solid fa-gear"></i>
+            <div class="serv-text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="serv-box">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <div class="serv-text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="serv-box">
+            <i class="fa-solid fa-camera"></i>
+            <div class="serv-text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="designs">
+      <img src="images/mobile.png" alt="photo" />
+      <div class="designs-text">
+        <h3>our designs comes with...</h3>
+        <ul>
+          <li>Responsive Design</li>
+          <li>Modern and Clean Design</li>
+          <li>Clean Code</li>
+          <li>Browser Friendly</li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="title">
+        <h2>PORTFOLIO</h2>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt.
+        </p>
+      </div>
+      <div class="portfolio-filter">
+        <p data-cat=".all" class="active">all</p>
+        <p data-cat=".app">app</p>
+        <p data-cat=".photography">photography</p>
+        <p data-cat=".web">web</p>
+        <p data-cat=".print">print</p>
+      </div>
+      <div class="protfolio-grid">
+        <div class="all app"><img src="images/app1.jpg" alt="" /></div>
+        <div class="all web"><img src="images/web1.jpg" alt="" /></div>
+        <div class="all app"><img src="images/app2.jpg" alt="" /></div>
+        <div class="all web"><img src="images/web2.jpg" alt="" /></div>
+        <div class="all web"><img src="images/web3.jpg" alt="" /></div>
+        <div class="all photography">
+          <img src="images/photog1.jpg" alt="" />
+        </div>
+        <div class="all print"><img src="images/print1.jpg" alt="" /></div>
+        <div class="all photography">
+          <img src="images/photog2.jpg" alt="" />
+        </div>
+      </div>
+      <button>MORE</button>
+    </section>
+    <section class="videosec">
+      <video autoplay muted loop id="myVideo">
+        <source src="images/videosec.mp4" type="video/mp4" />
+      </video>
+      <div class="video-text">
+        <h2>super awesome video here</h2>
+        <p>Its All You Need</p>
+        <button class="more">see more</button>
+      </div>
+    </section>
+    <section class="about">
+      <div class="title">
+        <h2>ABOUT</h2>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt.
+        </p>
+      </div>
+      <div class="about-img"><img src="images/about.png" alt="about" /></div>
+      <div class="about-us">
+        <div class="about-flex">
+          <div class="about-box">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h2>1.236</h2>
+            <p>Coffee Drinks</p>
+          </div>
+          <div class="about-box">
+            <i class="fa-regular fa-folder"></i>
+            <h2>256</h2>
+            <p>Completed Projects</p>
+          </div>
+          <div class="about-box">
+            <i class="fa-regular fa-envelope"></i>
+            <h2>1,743</h2>
+            <p>Mail Sent</p>
+          </div>
+          <div class="about-box">
+            <i class="fa-solid fa-trophy"></i>
+            <h2>17</h2>
+            <p>Awards Received</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-skills">
+      <div class="test">
+        <div class="skills-text">
+          <h3>testimonials</h3>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div class="user">
+          <img src="images/user2.jpg" alt="" />
+          <div class="user-text">
+            <p>
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+            <span>John Doe, CEO</span>
+          </div>
+        </div>
+        <div class="user">
+          <img src="images/user1.jpg" alt="" />
+          <div class="user-text">
+            <p>
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+            <span>John Doe, CEO</span>
+          </div>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="skills-text">
+          <h3>skills</h3>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div class="progress">
+          <h3>ADOBE</h3>
+          <div class="fill">
+            <span style="width: 90%" data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="progress">
+          <h3>HTML & CSS</h3>
+          <div class="fill">
+            <span style="width: 85%" data-progress="85%"></span>
+          </div>
+        </div>
+        <div class="progress">
+          <h3>JAVASCRIPT</h3>
+          <div class="fill">
+            <span style="width: 80%" data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="progress">
+          <h3>PHP</h3>
+          <div class="fill">
+            <span style="width: 90%" data-progress="90%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quote">
+      <p>
+        "accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+        elit, eget tincidunt."
+      </p>
+      <span>John Doe</span>
+    </section>
+    <section class="pricing">
+      <div class="title">
+        <h2>pricing</h2>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt.
+        </p>
+      </div>
+      <div class="price-container">
+        <div class="price-box">
+          <p>basic</p>
+          <h3>19 <span>/Mo</span></h3>
+          <div class="features">
+            <p>Feature No 1</p>
+            <p>Extra Feature</p>
+            <p>Extra Feature No 2</p>
+            <p>Feature</p>
+          </div>
+          <button>Buy Now</button>
+        </div>
+        <div class="price-box">
+          <p>basic</p>
+          <h3>29 <span>/Mo</span></h3>
+          <div class="features">
+            <p>Feature No 1</p>
+            <p>Extra Feature</p>
+            <p>Extra Feature No 2</p>
+            <p>Feature</p>
+          </div>
+          <button>Buy Now</button>
+        </div>
+        <div class="price-box">
+          <p>basic</p>
+          <h3>39 <span>/Mo</span></h3>
+          <div class="features">
+            <p>Feature No 1</p>
+            <p>Extra Feature</p>
+            <p>Extra Feature No 2</p>
+            <p>Feature</p>
+          </div>
+          <button>Buy Now</button>
+        </div>
+        <div class="price-box">
+          <p>basic</p>
+          <h3>49 <span>/Mo</span></h3>
+          <div class="features">
+            <p>Feature No 1</p>
+            <p>Extra Feature</p>
+            <p>Extra Feature No 2</p>
+            <p>Feature</p>
+          </div>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <p class="cont-p">Contact us if you have special request</p>
+      <button class="cont-btn">Contact Us</button>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
